@@ -1,5 +1,22 @@
-$body-color: blue;
+$body-color: rgb(40,40,40);
+$font-color: white;
 
 body {
-  color: $body-color;
+  color: $font-color;
+  background-color: $body-color;
 }
+.container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#canvas {
+  border: 1px solid white;
+}
+
+
