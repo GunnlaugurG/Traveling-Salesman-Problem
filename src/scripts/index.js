@@ -17,7 +17,7 @@ import drawService from './draw.js';
     for(var i = 0; i < points.length-1; i++){
         let vert = generateVert(i, i+1);
         // if its the last the last parameter is false to make it white instead of yellow
-        if(points.length-1 !== i){
+        if(points.length-2 !== i){
             drawService.drawLine(ctx, vert, false);
         }
         else{
