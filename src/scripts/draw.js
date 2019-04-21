@@ -17,6 +17,9 @@ let drawService = () => {
             ctx.lineWidth = "2";
             ctx.strokeStyle = "white";
             ctx.stroke();
+        },
+        clear: (ctx, c) => {
+            ctx.clearRect(0,0, c.width, c.height);
         }
     };
 };
