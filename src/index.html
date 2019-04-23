@@ -7,9 +7,21 @@
 </head>
 <body>
   <div class="container">
-    <h1>Traveling Sales Person</h1>
-    <input type="button" class="button-black" id="solve" value="Solve">
-    <input type="button" class="button-black" id="restart" value="Generate New">
+    <div class="wrapper">
+      <h1>Traveling Sales Person</h1>
+      <div class="spinner" id="spinner">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+        </div>
+      <p id="distance">Distance: </p>
+      <input type="button" class="button-black" id="solve" value="Solve">
+      <input type="button" class="button-black" id="restart" value="New Route">
+      <label>Number of cities</label>
+      <input type="number" class="button-black" id="cities" value="48">
+      <input type="button" class="button-black" id="generate" value="Change">
+      <label>Visualization delay</label>
+      <input type="number" class="button-black" id="delay" value="10">      
+    </div>
     <canvas id="canvas" width="800" height="800"></canvas>
   </div>
 </body>
