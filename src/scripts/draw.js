@@ -25,13 +25,13 @@ let drawService = () => {
 
 function drawRect (ctx, x, y, last){
     ctx.beginPath();
-    ctx.lineWidth = "6";
+    ctx.arc(x,y,6, 0, 2* Math.PI);
+
     if(last){
         ctx.fillStyle = "red";
     }else{
         ctx.fillStyle = "white";
     }
-    ctx.rect(x-4, y-4, 8, 8); 
     ctx.fill();
 }
 

@@ -1,6 +1,7 @@
 import '../styles/index.scss';
 import drawService from './draw.js';
 import TSP from './TSP.js';
+import FileServ from './file.js';
 
 (function (globalObject) {
     console.log("JS up and running");
@@ -22,8 +23,12 @@ import TSP from './TSP.js';
      });
      document.getElementById('delay').addEventListener('change', (e) => {
          tsp.timeOut = document.getElementById('delay').value;
-     })
- 
+     });
+     document.getElementById('file').addEventListener('change', async (e) => {
+        var file = e.target.files[0];
+        var points = await FileServ.readFile(file);
+        tsp.setRouteFromFile(points);
+     });
 
      function newRoute(){
         var getCitieCount = document.getElementById('cities');
