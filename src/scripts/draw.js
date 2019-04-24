@@ -15,15 +15,15 @@ let drawService = () => {
             ctx.clearRect(0,0, c.width, c.height);
         },
         drawDots: (ctx, points) => {
-            drawRect(ctx, points[0].x, points[0].y, true);
+            drawSingleDot(ctx, points[0].x, points[0].y, true);
             for(var i = 1; i < points.length; i++){
-                drawRect(ctx, points[i].x, points[i].y, false);
+                drawSingleDot(ctx, points[i].x, points[i].y, false);
             }
         }
     };
 };
 
-function drawRect (ctx, x, y, last){
+function drawSingleDot (ctx, x, y, last){
     ctx.beginPath();
     ctx.arc(x,y,6, 0, 2* Math.PI);
 

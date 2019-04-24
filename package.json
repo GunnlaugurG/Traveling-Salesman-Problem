@@ -4,11 +4,12 @@
   "description": "A light foundation for your next frontend project based on webpack.",
   "scripts": {
     "build": "webpack --config webpack/webpack.config.prod.js  --colors",
-    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+    "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wbkd/webpack-starter.git"
+    "url": "git+https://github.com/GunnlaugurG/Traveling-Salesman-Problem.git"
   },
   "keywords": [
     "webpack",
@@ -18,11 +19,10 @@
     "javascript",
     "webdev"
   ],
+
   "author": "webkid.io",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wbkd/webpack-starter/issues"
-  },
+  "homepage": "https://gunnlaugurg.github.io/Traveling-Salesman-Problem",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
@@ -46,6 +46,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.0"
+    "@babel/polyfill": "^7.4.0",
+    "gh-pages": "^2.0.1"
   }
 }
