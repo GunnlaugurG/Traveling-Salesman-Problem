@@ -22,7 +22,7 @@
 
   "author": "webkid.io",
   "license": "MIT",
-  "homepage": "https://gunnlaugurg.github.io/Traveling-Salesman-Problem",
+  "homepage": "https://gunnlaugurg.github.io/Traveling-Salesman-Problem/",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
